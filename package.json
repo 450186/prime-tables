@@ -2,9 +2,10 @@
   "name": "prime-tables",
   "version": "1.0.0",
   "description": "A Node.js application that generates a multiplication table using the first N prime numbers.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
