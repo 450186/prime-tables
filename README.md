@@ -55,6 +55,10 @@ The number 2 is then handled separately because it is the only even prime number
 The algorithm uses `Math.sqrt()` to find the square root of the number. This is for efficiency purposes. Take 49 for example, if we find the square root of the number, then we only need to check up to that square root (in this case 7) as opposed to having to check every number up to the original number. Any factor larger than the square root would have a corresponding factor smaller than the square root, which would have already been checked.
 
 As even numbers have already been accounted for, the algorithm then only checks odd potential divisors, further reducing the number of checks required.
+## What I'm Pleased With
+I'm particularly pleased with the fact that I was able to separate the functionality of the program into smaller functions to keep the code readable and easy to maintain. I am also pleased with the test coverage being 100% across the entire program. I am pleased that even when tweaking parts of the code the tests continued to verify the expected behaviour. An example of this was when I optimised the prime number algorithm for efficiency, the existing tests continued to confirm that the expected results were being produced.
+## What I Would Do With More Time
+If I had more time on this program, I would want to create a proper UI for it. The reason for this is that I noticed a limitation during testing. The CLI works great for smaller inputs, but as you get into larger multiplication tables, the formatting of the table can become difficult to read as they grow beyond the width of the terminal. A proper UI would give me more flexibility to display larger multiplication tables in a readable and accessible way.
 ## Project Structure
 - `src/index.js` - CLI entry point and user input
 - `src/isPrime.js` - Checks whether a number is prime
