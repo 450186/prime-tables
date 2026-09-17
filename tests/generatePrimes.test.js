@@ -24,3 +24,10 @@ test("throws an error if n is not a number", () => {
 test("finds the first 10 prime numbers", () => {
     expect(generatePrimes(10)).toEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29])
 })
+test("generates a larger list of primes", () => {
+    const primes = generatePrimes(100);
+
+    expect(primes.length).toBe(100);
+    expect(primes[0]).toBe(2);
+    expect(primes[primes.length - 1]).toBe(541);
+})
